@@ -273,6 +273,15 @@ cursor:pointer;
     display:none;
 }
 
+#menuBtn{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
 @media (max-width:768px){
 
 nav{
@@ -350,13 +359,4 @@ nav h2{
     font-size:18px;
 }
 
-}
-
-#menuBtn{
-    display:none;
-    background:none;
-    border:none;
-    color:white;
-    font-size:28px;
-    cursor:pointer;
 }
