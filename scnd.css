@@ -278,14 +278,11 @@ cursor:pointer;
     background:none;
     border:none;
     color:white;
-    font-size:28px;
+    font-size:30px;
     cursor:pointer;
 }
 
 @media (max-width:768px){
-
-    body{
-        background:red;}
     
 nav{
     display:flex;
@@ -362,4 +359,8 @@ nav h2{
     font-size:18px;
 }
 
+#menuBtn{
+    display:block;
+}
+    
 }
