@@ -7,16 +7,20 @@ themeBtn.onclick = function(){
 
 document.body.classList.toggle("dark");
 
+themeIcon.style.transform = "rotate(360deg)";
+
+setTimeout(() => {
+        themeIcon.style.transform = "";
+}, 300);
+        
 if(document.body.classList.contains("dark")){
-        themeIcon.classList.remove("fa-moon");
         themeIcon.classList.add("fa-sun");
     } else {
-        themeIcon.classList.remove("fa-sun");
         themeIcon.classList.add("fa-moon");
     }
 
 };
-}
+
 
 //typing animation
 
