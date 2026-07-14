@@ -14,8 +14,10 @@ setTimeout(() => {
 }, 300);
         
 if(document.body.classList.contains("dark")){
+        themeIcon.classList.remove("fa-moon");
         themeIcon.classList.add("fa-sun");
     } else {
+        themeIcon.classList.remove("fa-sun");
         themeIcon.classList.add("fa-moon");
     }
 
