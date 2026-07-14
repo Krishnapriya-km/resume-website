@@ -284,6 +284,9 @@ cursor:pointer;
 
 @media (max-width:768px){
 
+    body{
+        background:red;}
+    
 nav{
     display:flex;
     align-items:center;
