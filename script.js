@@ -8,6 +8,8 @@ document.body.classList.toggle("dark");
 
 }
 
+//typing animation
+
 const text = "BCA (Hons) AI & Data Science Student";
 const typing = document.getElementById("typing");
 
@@ -54,3 +56,33 @@ behavior:"smooth"
 });
 
 };
+
+//mobile menu
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.onclick = function () {
+
+    navLinks.classList.toggle("show");
+
+    if (navLinks.classList.contains("show")) {
+        menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    }
+
+    else {
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+
+};
+
+document.querySelectorAll("#navLinks a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("show");
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+});
